@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'superMarioBros';
+  src: url(../fonts/Super-Mario-Bros--3.ttf);
+}
+@font-face{
+  font-family: 'Nintendo-DS-BIOS';
+  src: url(../fonts/Nintendo-DS-BIOS.ttf);
+}
+#header {
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+#header h1{
+  margin: 0;
+  padding: 15px ;
+  background-color: #000;
+  font-family: 'superMarioBros';
+  font-weight: bolder;
+  text-align: center;
+  font-size: 1em;
+  color: white;
+}
+canvas:first-of-type {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    float: left;
+
+}
+canvas{
+  background: transparent;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.clear {
+  content : "";
+  clear: both;
+  display: table;
+}
+#background {
+    z-index: -2;
+
+}
+
+#perso {
+    top: 55px;
+    z-index: 0;
+
+}
+#coin {
+    top : 55px;
+    z-index: -1;
+
+}
+body {
+  background: #aaa;
+  font-family: 'superMarioBros';
+  font-size: 1.5em;
+  color: white;
+}
+.hide{
+  display: none;
+    }
+#containeur{
+  margin: 0;
+  padding: 0;
+  display: table;
+  /* flex-direction: column;
+  flex-wrap: nowrap; */
+  text-align: center;
+}
+#jeu{
+  margin: 0;
+  padding: 0;
+/*  border: 2px solid #00F;*/
+}
+
+.footer .liens-divers .lien-cv{
+  position: relative;
+  display: inline-block;
+  float: right;
+  width: 812px;
+  height: auto;
+  animation: spinning 2s steps(7) infinite;
+  -webkit-animation: spinning 2s steps(7) infinite;
+}
+
+@keyframes spinning {
+  0% {left : 0}
+  100% {left : -196px}
+}
+@-webkit-keyframes spinning {
+    0% {left : 0}
+  100% {left : -196px}
+}
+.footer {
+  padding: 15px 0;
+  position: relative;
+  bottom: 0;
+  background-color: #000;
+  width: 100%;
+}
+.footer p{
+  padding: 15px 0;
+  font-family: 'superMarioBros';
+  font-size: .7em;
+  font-weight: bold;
+  color : #FF5500FF;
+}
+
+.footer #cv-picto {
+  text-align: center;
+  width: 2em;
+}
+.footer .lien-cv{
+  padding: 15px 0;
+  font-family: 'Nintendo-DS-BIOS';
+  text-decoration: none;
+  color: rgb(199, 0, 255);
+}
+.footer .lien-cv:hover #cv-picto{
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  text-align: center;
+}
+.footer .lien-cv{
+  padding: 15px 0;
+  color: rgb(235, 39, 11);
+}
+.footer .lien-cv:hover p{
+  color: orange;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.footer .liens-divers {
+  display: inline-block;
+  list-style-type: none;
+}
+.footer .liens-divers .button-reload img {
+  width: 3em;
+}
+.footer .liens-divers .button-reload:hover img {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+.logo{
+  width: 20px;
+}
