@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Spelunky game development</title>
+	<link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+	<!-- CHARGEMENT DES IMAGES -->
+	<div id="cache" class="hide">
+      <img id='html_image' class="logo" src="img/logo/html5.png" alt="comptences html">
+	    <img id='css_image' class="logo" src="img/logo/css.png" alt="competences css">
+	    <img id='js_image' class="logo" src="img/logo/javascript.png" alt="competences js">
+	    <img id='jquery_image' class="logo" src="img/logo/jquery.png" alt="competences jquery">
+	    <img id='node_image' class="logo" src="img/logo/node.png" alt="competences node">
+	    <img id='angular_image' class="logo" src="img/logo/angular.png" alt="competences angular">
+        <img id="enemies_image" class="hide" src="img/smb_enemies_sheet.png" alt="enemies">
+	</div>
+	<div id="containeur">
+		<!-- JEU -->
+		<div id="header">
+			<!-- TITRE -->
+			<h1 class="">Plateformer Game Development</h1>
+		</div>
+		<div id="jeu">
+		<!-- CANVAS -->
+			<canvas id="background" class="canvas" width="1200" height="500">
+			</canvas>
+			<canvas id="perso" class="canvas" width="1200" height="500">
+			</canvas>
+			<canvas id="coin" class="canvas" width="1200" height="500">
+			</canvas>
+			<div class="clear"></div>
+		</div>
+		<!-- LIENS -->
+		<div class="footer">
+			<!-- lien vers mon cv -->
+				<ul class="liens-divers">
+					<li class="lien-reload"> <!-- Rejouer -->
+						<a class="button-reload" onclick="document.location.reload(true)">
+							<img src="img/refresh-picto.png" alt="rejouer">
+						</a>
+					</li>
+					<li> <!-- Acceder a mon CV -->
+						<a href="yves-carrere-cv.pdf" class="lien-cv" aria-label="lien cv">
+							<img id="cv-picto" src="img/cv-picto.png" title="télécharger mon cv" alt="picto cv">
+						</a>
+					</li>
+					<li>
+						<a class="legende" href="/index.html">retour a mon portfolio :</a>
+					</li>
+				</ul>
+		</div>
+	</div>
+	<script src="javascript/background.js"></script>
+	<script src="javascript/enemies.js"></script>
+	<script src="javascript/skillset.js"></script>
+	<script src="javascript/object2.js"></script>
+	<script src="javascript/clavier.js"></script>
+	<script src="javascript/main-copie.js"></script>
+</body>
+
+</html>
